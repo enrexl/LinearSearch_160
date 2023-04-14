@@ -20,7 +20,7 @@ void input() {
     
     //Accept array elements
     cout << "\n================\n";
-    cout << " Enter Array Elements\n";
+    cout << "\nEnter Array Elements\n";
     cout << "\n================\n";
     for (int i = 0; i < n; i++)
     {
@@ -45,16 +45,18 @@ void LinearSearch() {
             comparison++;
             if (arr[i] == item)         //langkah 5 #Found
             {
-                cout << "\n" << item << " Found at position" << (i + 1) << endl;
+                cout << "\n\t" << item << " Found at position " << (i + 1) << endl;
                 break;
             }
         }
-        if (arr[i] == n) 
-            cout << "\n" << item << "Not found in the array\n";
-            cout << "\nNumber of comparison = " << comparison << endl;
-
-            cout << "\nContinue search (y/n) : ";
-            cin >> ch;
+        if (i == n)                     //langkah 5 #notFound
+            cout << "\n" << item << " Not found in the array\n";
+        
+        cout << "\n\tNumber of comparison = " << comparison << endl;
+        
+        cout << "\nContinue search (y/n) : ";
+        cin >> ch;
+        
     } while ((ch == 'y') || (ch == 'Y'));
 }
 int main()
