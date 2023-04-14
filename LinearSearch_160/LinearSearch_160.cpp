@@ -15,13 +15,13 @@ void input() {
         if ((n > 0) && (n <= 20))
             break;
         else
-            cout << "\nArray minimum adalah 1 dan maksimum adalah 20";
+            cout << "\nArray minimum adalah 1 dan maksimum adalah 20\n";
     }
     
     //Accept array elements
-    cout << "\n================\n";
+    cout << "\n====================";
     cout << "\nEnter Array Elements\n";
-    cout << "\n================\n";
+    cout << "====================\n\n";
     for (int i = 0; i < n; i++)
     {
         cout << "<" << (i + 1) << ">";
@@ -50,10 +50,8 @@ void LinearSearch() {
             }
         }
 
-        if (i == n) {                    //langkah 5 #notFound
+        if (i == n)                   //langkah 5 #notFound
             cout << "\n" << item << " Not found in the array\n";
-        }
-        
         cout << "\n\tNumber of comparison = " << comparison << endl;
         
         cout << "\nContinue search (y/n) : ";
