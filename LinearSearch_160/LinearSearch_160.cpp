@@ -9,7 +9,10 @@ void input() {
     while (true) {
         cout << "Enter the numner of element in the array = ";
         cin >> n;
-        
+        if ((n > 0) && (n <= 20))
+            break;
+        else
+            cout << "\nArray minimum adalah 1 dan maksimum adalah 20"
     }
 }
 int main()
